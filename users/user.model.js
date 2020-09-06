@@ -17,6 +17,8 @@ const schema = new Schema({
     restaurantVoucherName: { type: String, unique: false, required: false },
     restaurantVoucherCode: { type: String, unique: false, required: false },
     restaurantVoucherCounter: { type: Number, unique: false, required: false, default: 0 },
+    restaurantLat: { type: Number, unique: false, required: false},
+    restaurantLng: { type: Number, unique: false, required: false},
     admin: { type: Boolean, unique: false, required: false, default: false },
     guest: { type: Boolean, unique: false, required: false, default: false },
     hash: { type: String, required: false },
